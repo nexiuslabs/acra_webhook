@@ -14,7 +14,7 @@ load_dotenv()
 
 # Configuration from environment variables (no hard-coded secrets)
 DATABASE_URL = os.getenv("DATABASE_URL")
-API_URL = os.getenv("API_URL", "https://data.gov.sg/api/action/datastore_search")
+API_URL = os.getenv("API_URL", "")
 RESOURCE_ID = os.getenv("RESOURCE_ID", "")
 try:
     PAGE_SIZE = int(os.getenv("PAGE_SIZE", "100"))
